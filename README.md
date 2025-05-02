@@ -12,14 +12,16 @@ The chatbot:
 5. Constructs a prompt and queries the `Mixtral-8x7B-Instruct-v0.1` model via Hugging Face.
 6. Displays a response based only on the content of the paper.
 
-## 🧰 Tech Stack
+## 🧰 Libraries & Frameworks Used
 
-- Python
-- `PyMuPDF` (`fitz`) – for PDF parsing
-- `sentence-transformers` – for embedding text
-- `chromadb` – for storing and querying embeddings
-- `huggingface_hub` – to access the LLM (Mixtral)
-- `.env` file – to securely store your Hugging Face API key
+| Library             | Purpose |
+|---------------------|---------|
+| [`fitz` (PyMuPDF)]  | Extracts text from PDFs |
+| [`sentence-transformers`] | Converts text chunks into embeddings |
+| [`chromadb`]        | Vector database for storing/querying embeddings |
+| [`huggingface_hub`] | Interfaces with hosted language models |
+| [`dotenv`]          | Loads Hugging Face API token from `.env` securely |
+
 
 ## 🚀 Getting Started
 
